@@ -1,0 +1,10 @@
+const name = prompt("Введите ваше имя:");
+const birthYear = prompt("Введите ваш год рождения:");
+
+const currentYear = new Date().getFullYear();
+const age = currentYear - Number(birthYear);
+
+const message = `${name}: ${age}`;
+
+// Выводим результат в alert
+alert(message);
